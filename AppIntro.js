@@ -99,11 +99,19 @@ const defaulStyles = {
     fontFamily: 'Arial',
   },
   full: {
+    paddingRight: 30,
     height: 80,
     width: 100,
     justifyContent: 'center',
     alignItems: 'center',
   },
+  fullDone: {
+    marginLeft: 20,
+    height: 80,
+    width: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
 }
 
 export default class AppIntro extends Component {
