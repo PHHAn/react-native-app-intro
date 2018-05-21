@@ -14,7 +14,7 @@ export const DoneButton = ({
 }) => {
   return (
     <View style={styles.btnContainer}>
-      <Animated.View style={[styles.full, { height: 0 }, {
+      <Animated.View style={[styles.fullDone, { height: 0 }, {
         opacity: doneFadeOpacity,
         transform: [{
           translateX: skipFadeOpacity.interpolate({
@@ -24,7 +24,7 @@ export const DoneButton = ({
         }],
       }]}
       >
-        <View style={styles.full}>
+        <View style={styles.fullDone}>
           <Text style={[styles.controllText, {
             color: rightTextColor, paddingRight: 30,
           }]}>
@@ -32,8 +32,8 @@ export const DoneButton = ({
           </Text>
         </View>
       </Animated.View>
-      <Animated.View style={[styles.full, { height: 0 }, { opacity: nextOpacity }]}>
-        <TouchableOpacity style={styles.full}
+      <Animated.View style={[styles.fullDone, { height: 0 }, { opacity: nextOpacity }]}>
+        <TouchableOpacity style={styles.fullDone}
           onPress={ isDoneBtnShow ? onDoneBtnClick : onNextBtnClick}>
          <Text style={[styles.nextButtonText, { color: rightTextColor }]}>
           {nextBtnLabel}
@@ -45,4 +45,3 @@ export const DoneButton = ({
 }
 
 export default DoneButton
-        
