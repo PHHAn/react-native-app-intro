@@ -14,6 +14,7 @@ import {
   Platform,
 } from 'react-native';
 import Swiper from 'react-native-swiper';
+import DeviceInfo from 'react-native-device-info';
 import DoneButton from './components/DoneButton';
 import SkipButton from './components/SkipButton';
 import RenderDots from './components/Dots';
@@ -72,7 +73,7 @@ const defaulStyles = {
   },
   paginationContainer: {
     position: 'absolute',
-    bottom: 25,
+    bottom: (DeviceInfo.getModel() === 'iPhone X') ? 50 : 25,
     left: 0,
     right: 0,
     flexDirection: 'row',
