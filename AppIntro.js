@@ -93,6 +93,7 @@ const defaulStyles = {
     justifyContent: 'center',
     alignItems: 'center',
     height: 50,
+    paddingLeft: 20,
   },
   nextButtonText: {
     fontSize: 25,
